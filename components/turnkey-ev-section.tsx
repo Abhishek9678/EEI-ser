@@ -11,43 +11,36 @@ export default function TurnkeyEVSection() {
           {/* Left Content */}
           <div className="space-y-8">
             <div>
-              <p className="text-sm text-gray-600 mb-2">✦ Ready To Deploy ✦</p>
-              <h2 className="text-5xl font-bold text-black">Turnkey EV Operations</h2>
+              <h2 className="text-5xl font-bold text-black">Turnkey EV Operations — Ready to Deploy.</h2>
             </div>
             <p className="text-lg text-gray-700">
-              From vehicle onboarding to real-time dispatch, we handle the heavy lifting.
+              EEI Services offers end-to-end EV fleet solutions including leasing, real-time tracking, and trained manpower — everything your business needs to go electric with ease.
             </p>
 
             {/* Features */}
             <div className="space-y-6">
               <div className="flex gap-4 items-start">
-                <div className="text-2xl">📦</div>
+                <div className="text-2xl">✅</div>
                 <div>
-                  <h3 className="font-semibold text-black">Fleet leasing & maintenance packages (2W & 3W)</h3>
+                  <h3 className="font-semibold text-black">Fleet leasing & maintenance (2W & 3W)</h3>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="text-2xl">📍</div>
+                <div className="text-2xl">⚡</div>
                 <div>
                   <h3 className="font-semibold text-black">Smart dispatch & live tracking via LIUM GO</h3>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="text-2xl">🏢</div>
+                <div className="text-2xl">👨‍🏫</div>
                 <div>
-                  <h3 className="font-semibold text-black">Rider training, verification & performance analytics</h3>
+                  <h3 className="font-semibold text-black">Verified riders & performance analytics</h3>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
-                <div className="text-2xl">🔄</div>
+                <div className="text-2xl">☀️</div>
                 <div>
-                  <h3 className="font-semibold text-black">Fleet leasing & maintenance packages (2W & 3W)</h3>
-                </div>
-              </div>
-              <div className="flex gap-4 items-start">
-                <div className="text-2xl">🔌</div>
-                <div>
-                  <h3 className="font-semibold text-black">Flexible subscription for chargers & parking</h3>
+                  <h3 className="font-semibold text-black">Charging & parking on subscription</h3>
                 </div>
               </div>
             </div>
@@ -55,37 +48,8 @@ export default function TurnkeyEVSection() {
 
           {/* Right Content - Image and Card */}
           <div className="relative space-y-6">
-            {/* Dashboard Card */}
-            <div className="bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg p-8 text-white">
-              <div className="grid grid-cols-5 gap-4 text-center">
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center">
-                    🚗
-                  </div>
-                  <span className="text-xs">Maintenance</span>
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center">
-                    🔋
-                  </div>
-                  <span className="text-xs">Battery</span>
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center">❤️</div>
-                  <span className="text-xs">Safety Health</span>
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center">
-                    📊
-                  </div>
-                  <span className="text-xs">Predictive Analytics</span>
-                </div>
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-12 h-12 rounded-full border-2 border-white flex items-center justify-center">⏱️</div>
-                  <span className="text-xs">Live Tracking</span>
-                </div>
-              </div>
-            </div>
+            
+            
 
             {/* Vehicle Image and Info Card */}
             <div className="relative">
