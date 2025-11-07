@@ -4,17 +4,17 @@ import Image from "next/image"
 
 export default function HowLiumGoWorks() {
   return (
-    <section className="w-full bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="w-full bg-gray-50 py-12 sm:py-16 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Intro Text */}
-        <div className="mb-16 space-y-4">
-          <p className="text-lg text-gray-700">
+        <div className="mb-8 sm:mb-12 md:mb-16 space-y-4">
+          <p className="text-base sm:text-lg text-gray-700">
             LIUM GO from EEI Services connects <span className="inline-block">🚗</span> vehicles, manpower and charging{" "}
             <span className="inline-block">⚡</span> so you can run profitable operations. Scale fast, operate smart.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
           {/* Left - Vehicle Image */}
           <div>
             <Image
@@ -27,39 +27,39 @@ export default function HowLiumGoWorks() {
           </div>
 
           {/* Right - How It Works */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <div>
-              <p className="text-sm text-gray-600 mb-2">✦ Turnkey EV Operations — Ready To Deploy ✦</p>
-              <h2 className="text-4xl font-bold text-black">How EEI Services Works</h2>
+              <p className="text-xs sm:text-sm text-gray-600 mb-2">✦ Turnkey EV Operations — Ready To Deploy ✦</p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">How EEI Services Works</h2>
             </div>
 
             {/* Features with Checkmarks */}
-            <div className="space-y-6">
-              <div className="flex gap-4">
-                <div className="text-lime-400 text-2xl flex-shrink-0">✓</div>
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex gap-3 sm:gap-4">
+                <div className="text-lime-400 text-xl sm:text-2xl flex-shrink-0">✓</div>
                 <div>
-                  <h3 className="font-bold text-black text-lg">Lease or Franchise</h3>
-                  <p className="text-gray-700">Choose flexible EV subleasing or launch a LIUM GO hub.</p>
+                  <h3 className="font-bold text-black text-base sm:text-lg">Lease or Franchise</h3>
+                  <p className="text-gray-700 text-sm sm:text-base">Choose flexible EV subleasing or launch a LIUM GO hub.</p>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="text-lime-400 text-2xl flex-shrink-0">✓</div>
+              <div className="flex gap-3 sm:gap-4">
+                <div className="text-lime-400 text-xl sm:text-2xl flex-shrink-0">✓</div>
                 <div>
-                  <h3 className="font-bold text-black text-lg">Operate & Dispatch</h3>
-                  <p className="text-gray-700">Trained riders, smart routing, real-time tracking.</p>
+                  <h3 className="font-bold text-black text-base sm:text-lg">Operate & Dispatch</h3>
+                  <p className="text-gray-700 text-sm sm:text-base">Trained riders, smart routing, real-time tracking.</p>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <div className="text-lime-400 text-2xl flex-shrink-0">✓</div>
+              <div className="flex gap-3 sm:gap-4">
+                <div className="text-lime-400 text-xl sm:text-2xl flex-shrink-0">✓</div>
                 <div>
-                  <h3 className="font-bold text-black text-lg">Scale & Earn</h3>
-                  <p className="text-gray-700">Expand service area, optimize returns, monitor impact.</p>
+                  <h3 className="font-bold text-black text-base sm:text-lg">Scale & Earn</h3>
+                  <p className="text-gray-700 text-sm sm:text-base">Expand service area, optimize returns, monitor impact.</p>
                 </div>
               </div>
             </div>
 
             {/* CTA Button */}
-            <button className="bg-amber-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-amber-600 transition flex items-center gap-2 w-fit">
+            <button className="bg-amber-700 text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold hover:bg-amber-600 transition flex items-center gap-2 w-fit text-sm sm:text-base">
               See Pricing & Plans
               <span>↗</span>
             </button>

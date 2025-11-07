@@ -4,14 +4,14 @@ import { Phone, HelpCircle, Mail } from "lucide-react"
 
 export default function ContactSection() {
   return (
-    <section className="w-full bg-gradient-to-r from-gray-900 to-gray-800 py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section className="w-full bg-gradient-to-r from-gray-900 to-gray-800 py-12 sm:py-16 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* Left - Contact Form */}
-          <div className="bg-white rounded-2xl p-8 space-y-6">
+          <div className="bg-white rounded-2xl p-6 sm:p-8 space-y-4 sm:space-y-6">
             <div>
-              <p className="text-sm text-gray-600 mb-2">✦ Contact Us ✦</p>
-              <h2 className="text-4xl font-bold text-black">Get In Touch</h2>
+              <p className="text-xs sm:text-sm text-gray-600 mb-2">✦ Contact Us ✦</p>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">Get In Touch</h2>
             </div>
 
             <form className="space-y-4">
@@ -81,11 +81,11 @@ export default function ContactSection() {
             </div>
 
             {/* Footer Links */}
-            <div className="border-t border-gray-700 pt-8">
-              <div className="grid grid-cols-3 gap-8">
+            <div className="border-t border-gray-700 pt-6 sm:pt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
                 <div>
-                  <h4 className="font-semibold text-white mb-4">Information</h4>
-                  <ul className="space-y-2 text-gray-300 text-sm">
+                  <h4 className="font-semibold text-white mb-3 sm:mb-4 text-sm sm:text-base">Information</h4>
+                  <ul className="space-y-2 text-gray-300 text-xs sm:text-sm">
                     <li>
                       <a href="#" className="hover:text-amber-400 transition">
                         Our Locations
@@ -114,8 +114,8 @@ export default function ContactSection() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-4">Support</h4>
-                  <ul className="space-y-2 text-gray-300 text-sm">
+                  <h4 className="font-semibold text-white mb-3 sm:mb-4 text-sm sm:text-base">Support</h4>
+                  <ul className="space-y-2 text-gray-300 text-xs sm:text-sm">
                     <li>
                       <a href="#" className="hover:text-amber-400 transition">
                         Solutions
@@ -144,8 +144,8 @@ export default function ContactSection() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-4">Services</h4>
-                  <ul className="space-y-2 text-gray-300 text-sm">
+                  <h4 className="font-semibold text-white mb-3 sm:mb-4 text-sm sm:text-base">Services</h4>
+                  <ul className="space-y-2 text-gray-300 text-xs sm:text-sm">
                     <li>
                       <a href="#" className="hover:text-amber-400 transition">
                         Solar Installation
