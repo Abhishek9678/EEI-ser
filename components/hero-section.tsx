@@ -6,7 +6,7 @@ export default function HeroSection() {
   return (
     <section className="w-full bg-white pt-28 pb-12 md:pt-32 md:pb-16 lg:pt-36 lg:pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-4 items-start">
           
           {/* Left Column - Text Content */}
           <div className="space-y-4 sm:space-y-5 md:space-y-6 order-2 lg:order-1">
@@ -104,14 +104,14 @@ export default function HeroSection() {
           {/* Right Column - Image and CTA Buttons */}
           <div className="space-y-6 order-1 lg:order-2 -mt-8 sm:-mt-10 md:-mt-12 lg:-mt-16">
             {/* Main Image */}
-            <div className="relative w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[520px] xl:h-[550px]">
+            <div className="relative w-full lg:w-[160%] lg:-ml-[30%] h-[400px] sm:h-[450px] md:h-[500px] lg:h-[520px] xl:h-[550px]">
               <Image
                 src="/heroev.jpg"
                 alt="EV vehicle with driver and charging station"
                 fill
                 className="object-contain"
                 style={{ objectFit: 'contain' }}
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                sizes="(max-width: 1024px) 100vw, 60vw"
                 quality={95}
                 priority
               />
