@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 export default function Header() {
@@ -11,8 +12,14 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-[#003366]/95 backdrop-blur z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-white font-bold text-xl sm:text-2xl hover:text-amber-400 transition">
-          EEI
+        <Link href="/" className="relative h-10 w-24 sm:h-12 sm:w-32 hover:opacity-80 transition">
+          <Image
+            src="/EEIRe.jpg"
+            alt="EEI Logo"
+            fill
+            className="object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
