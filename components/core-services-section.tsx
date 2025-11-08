@@ -61,9 +61,9 @@ export default function CoreServicesSection() {
 
         {/* Partners Section */}
         <div className="text-center space-y-4 sm:space-y-6">
-          <p className="text-xs sm:text-sm text-gray-600">✦ Partners ✦</p>
+          
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black px-4">
-            Trusted By Brands Across India
+            Vision to Build and Strength to Grow
           </h3>
         </div>
       </div>
