@@ -47,55 +47,199 @@ export default function HeroSection() {
                 <h3 className="text-center text-base sm:text-lg font-bold text-gray-900">Our Partners</h3>
               </div>
               
-              {/* Logos Row - Horizontal on Large Screens */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
-                <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition">
-                  <div className="h-10 flex items-center justify-center mb-2">
-                    <Image
-                      src="/amazon.png"
-                      alt="Amazon"
-                      width={80}
-                      height={40}
-                      className="object-contain max-h-8"
-                    />
+              {/* Animated Logos Scroll */}
+              <div className="relative overflow-hidden">
+                <style jsx>{`
+                  @keyframes scroll {
+                    0% {
+                      transform: translateX(0);
+                    }
+                    100% {
+                      transform: translateX(-50%);
+                    }
+                  }
+                  .animate-scroll {
+                    animation: scroll 12s linear infinite;
+                  }
+                  .animate-scroll:hover {
+                    animation-play-state: paused;
+                  }
+                `}</style>
+                <div className="flex animate-scroll">
+                  {/* First set of logos */}
+                  <div className="flex gap-4 sm:gap-5 md:gap-6 flex-shrink-0">
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/amazon.png"
+                          alt="Amazon"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Amazon</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/bigbasket.png"
+                          alt="BigBasket"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">BigBasket</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/portor.png"
+                          alt="Porter"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Porter</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/shawdowfax.png"
+                          alt="Shadowfax"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Shadowfax</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/cipla.png"
+                          alt="Cipla"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Cipla</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/delhivery.png"
+                          alt="Delhivery"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Delhivery</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/swiggy.jpg"
+                          alt="Swiggy"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Swiggy</p>
+                    </div>
                   </div>
-                  <p className="text-xs sm:text-sm font-medium text-gray-700">Amazon</p>
-                </div>
-                <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition">
-                  <div className="h-10 flex items-center justify-center mb-2">
-                    <Image
-                      src="/bigbasket.png"
-                      alt="BigBasket"
-                      width={80}
-                      height={40}
-                      className="object-contain max-h-8"
-                    />
+                  {/* Duplicate set for seamless loop */}
+                  <div className="flex gap-4 sm:gap-5 md:gap-6 flex-shrink-0 ml-4 sm:ml-5 md:ml-6">
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/amazon.png"
+                          alt="Amazon"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Amazon</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/bigbasket.png"
+                          alt="BigBasket"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">BigBasket</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/portor.png"
+                          alt="Porter"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Porter</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/shawdowfax.png"
+                          alt="Shadowfax"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Shadowfax</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/cipla.png"
+                          alt="Cipla"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Cipla</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/delhivery.png"
+                          alt="Delhivery"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Delhivery</p>
+                    </div>
+                    <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition w-32 sm:w-36">
+                      <div className="h-10 flex items-center justify-center mb-2">
+                        <Image
+                          src="/swiggy.jpg"
+                          alt="Swiggy"
+                          width={80}
+                          height={40}
+                          className="object-contain max-h-8"
+                        />
+                      </div>
+                      <p className="text-xs sm:text-sm font-medium text-gray-700">Swiggy</p>
+                    </div>
                   </div>
-                  <p className="text-xs sm:text-sm font-medium text-gray-700">BigBasket</p>
-                </div>
-                <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition">
-                  <div className="h-10 flex items-center justify-center mb-2">
-                    <Image
-                      src="/portor.png"
-                      alt="Porter"
-                      width={80}
-                      height={40}
-                      className="object-contain max-h-8"
-                    />
-                  </div>
-                  <p className="text-xs sm:text-sm font-medium text-gray-700">Porter</p>
-                </div>
-                <div className="flex flex-col items-center justify-center p-3 sm:p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition">
-                  <div className="h-10 flex items-center justify-center mb-2">
-                    <Image
-                      src="/shawdowfax.png"
-                      alt="Shadowfax"
-                      width={80}
-                      height={40}
-                      className="object-contain max-h-8"
-                    />
-                  </div>
-                  <p className="text-xs sm:text-sm font-medium text-gray-700">Shadowfax</p>
                 </div>
               </div>
             </div>
