@@ -1,19 +1,22 @@
 "use client"
 
-import Image from "next/image"
-import { Pause } from "lucide-react"
-
 export default function VideoSection() {
   return (
     <section className="w-full bg-white py-12 sm:py-16 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="relative rounded-lg overflow-hidden h-64 sm:h-80 md:h-96 lg:h-[500px]">
-          <Image src="/wind-turbines-renewable-energy.jpg" alt="Wind turbines" fill className="object-cover" />
-          <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-            <button className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-amber-700 flex items-center justify-center hover:bg-amber-600 transition shadow-lg">
-              <Pause size={32} className="text-black sm:w-10 sm:h-10" />
-            </button>
-          </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative rounded-lg overflow-hidden shadow-xl h-56 sm:h-72 md:h-80 lg:h-96 xl:h-[500px]">
+          <video
+            className="w-full h-full object-cover"
+            controls
+            preload="metadata"
+            poster="https://res.cloudinary.com/dvbx2tqcg/video/upload/v1762595655/VIDEO-2024-09-17-19-29-25_yntwbh.jpg"
+          >
+            <source
+              src="https://res.cloudinary.com/dvbx2tqcg/video/upload/v1762595655/VIDEO-2024-09-17-19-29-25_yntwbh.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>
