@@ -1,9 +1,13 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
-import { Play } from "lucide-react"
+import { Play, X } from "lucide-react"
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog"
 
 export default function TurnkeyEVSection() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false)
+
   return (
     <section className="w-full bg-white py-12 sm:py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,13 +70,42 @@ export default function TurnkeyEVSection() {
               <p className="text-gray-700 text-[10px] sm:text-xs md:text-sm mb-2 sm:mb-3 md:mb-4 leading-snug">
                 See how LIUM GO powers real-time dispatch, maintenance, and fleet intelligence.
               </p>
-              <button className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-lime-400 flex items-center justify-center hover:bg-lime-300 active:scale-95 transition-all shadow-md" aria-label="Play video">
+              <button 
+                onClick={() => setIsVideoOpen(true)}
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-lime-400 flex items-center justify-center hover:bg-lime-300 active:scale-95 transition-all shadow-md" 
+                aria-label="Play video"
+              >
                 <Play size={16} className="text-black sm:w-5 sm:h-5 md:w-6 md:h-6" />
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Video Dialog */}
+      <Dialog open={isVideoOpen} onOpenChange={setIsVideoOpen}>
+        <DialogContent className="max-w-5xl w-[95vw] p-0 bg-black border-0">
+          <DialogClose className="absolute right-2 top-2 z-50 rounded-full bg-black/50 p-2 text-white hover:bg-black/70 transition-colors">
+            <X className="h-4 w-4" />
+            <span className="sr-only">Close</span>
+          </DialogClose>
+          <div className="relative w-full aspect-video">
+            <video
+              className="w-full h-full"
+              controls
+              autoPlay
+              preload="metadata"
+              poster="https://res.cloudinary.com/dvbx2tqcg/video/upload/v1762595659/VIDEO-2024-09-28-12-11-04_glgsuo.jpg"
+            >
+              <source
+                src="https://res.cloudinary.com/dvbx2tqcg/video/upload/v1762595659/VIDEO-2024-09-28-12-11-04_glgsuo.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   )
 }
