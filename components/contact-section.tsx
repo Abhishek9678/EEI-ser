@@ -57,7 +57,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-white">Talk To Us</h3>
-                  <p className="text-gray-300">(+000) 12345 6789</p>
+                  <p className="text-gray-300">+91 9211780652</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
@@ -66,7 +66,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-white">Help Centre</h3>
-                  <p className="text-gray-300">support@example.com</p>
+                  <p className="text-gray-300">evolveenterprise01@gmail.com</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
@@ -75,7 +75,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-white">Write To Us</h3>
-                  <p className="text-gray-300">info@example.com</p>
+                  <p className="text-gray-300">evolveenterprise01@gmail.com</p>
                 </div>
               </div>
             </div>
